@@ -1,0 +1,283 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+
+}
+:root{
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body::-webkit-scrollbar{
+    width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track{
+    background: #0e0b16;
+}
+body::-webkit-scrollbar-thumb{
+    background: #6649b8;
+}
+
+.navbar{
+    width: 5rem;
+    height: 100vh;
+    position: fixed;
+    background-color: #0e0b16;
+    transition: 300ms ease-in;
+    font-family: 'Shippori Antique', sans-serif;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    z-index: 200;
+    
+}
+.navbar-nav{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: ease-in-out;
+    
+}
+.nav-item{
+    padding: 20px;
+}
+.nav-link{
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    color: #E7DFDD;
+    text-decoration: none;
+}
+.link-text{
+    display: none;
+    margin-left: 1rem;
+}
+.nav-link img{
+    width: 50px;
+    height: 50px;
+    margin-left:0.25rem;
+}
+.navbar:hover{
+    width: 16rem;
+    border-top-right-radius: 80px;
+    border-bottom-right-radius: 80px;
+}
+.navbar:hover .link-text{
+    display: block;
+}
+.nav-item:hover .link-text{
+    font-size: 20px;
+    transition: all 0.2s ease-in-out;
+}
+.logo img{
+    height: 70px;
+    width: 70px;
+}
+main{
+    margin-left: 5rem;
+    background: whitesmoke;
+}
+main .front-page{
+    margin-left: 15rem;
+    padding-top: 9rem;
+    height: 100vh;
+}
+.front-page{
+    display: flex;
+}
+.front-page h1,h3{
+    line-height: 80px;
+    letter-spacing: 5px;
+    font-family: 'Fira Code', monospace;
+}
+.writing{
+    width: 40%;
+    height: 100%;
+}
+.name{
+    color: #481edf;
+}
+.photo img{
+    height: 500px;
+    width: 500px;
+    /* display:inline-block; */
+
+}
+.photo{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+}
+.photo img{
+    margin-bottom: 300px;
+    margin-left: 300px;
+    margin-top: 50px;
+    border: solid 3px #000;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-radius: 50%;
+
+}
+.myself{
+    width: 100%;
+    height: 100vh;
+}
+.intro{
+    width: 100%;
+    height: 50%;
+    /* background-color: brown; */
+    margin: 0 auto;
+    /* background-color: blanchedalmond; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    
+      
+}
+
+.intro .box{
+    background-color:whitesmoke ;
+    width: 90%;
+    height: 90%;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px rgba(0, 0,0 , 0.5);
+    padding: 35px;
+    border:solid 2px black;
+
+  }
+  .intro .box h3{
+    text-align: center;
+    margin-top: 5px;
+    color:#481edf;
+    font-size: 26px;
+  }
+  .intro .box p{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+    font-family: 'Shippori Antique', sans-serif;
+  }
+.qualities{
+    width: 100%;
+    height: 50%;
+    /* background-color:cornflowerblue; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.plate{
+    width: 280px;
+    height: 250px;
+    box-shadow: 10px 10px 10px rgba(0, 0,0 , 0.5);
+    border-radius: 20px;
+    background: rgba(225, 225, 225, 0.1);
+    overflow: hidden;
+    backdrop-filter: blur(4px);
+    padding: 10px;
+
+  }
+
+.plate .content p{
+    font-family: 'Shippori Antique', sans-serif;
+}  
+.plate .content h3{
+    color:#481edf;
+}
+.space{
+    width: 100%;
+    height: 80vh;
+    /* background-color:white; */
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    padding-left: 40px;
+    padding: 20px;
+}
+.space .form{
+    height: 90%;
+    width: 50%;
+    /* background-color: aquamarine; */
+    /* margin-top: 100px; */
+    background-color:whitesmoke;
+    padding: 18px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px rgba(0, 0,0 , 0.5);
+    margin-bottom: 8px;
+  }
+
+  .space .form h2{
+    font-size: 30px;
+    /* font-family: 'Timmana', sans-serif; */
+  }
+
+  .space .form .inputBox{
+    width: 100%;
+    margin-top: 13px;
+   
+
+  }
+  
+  .space .form .inputBox input,
+  .space .form .inputBox textarea{
+    width: 100%;
+    padding: 4px 0;
+    font-size: 15px;
+    margin: 10px 0px;
+    border: none;
+    outline: none;
+    border-bottom:4px solid #481edf ;
+    resize: none;
+    background-color: whitesmoke;
+  }
+  .space .form .inputBox span{
+    font-size: 20px;
+    font-family: 'Timmana', sans-serif;
+   
+  }
+  .space .form .inputBox input[type="submit"]{
+    width: 110px;
+    /* padding: 12px; */
+    border-radius: 10px;
+    background-color:#481edf;
+    font-family: 'Timmana', sans-serif;
+    font-size: 20px;
+    margin-top: 5px;
+    cursor: pointer;
+    color:beige;
+  }
+
+  .space .form .inputBox input[type="submit"]:hover{
+    background-color: whitesmoke;
+    color:#481edf ;
+    transition:all 0.3s;
+  }
+        
+  .contactme{
+      text-decoration: none;
+      font-family: 'Shippori Antique', sans-serif;
+      border: solid 2px #481edf;
+      
+      /* letter-spacing: 10px; */
+      color: black;
+      padding: 10px;
+      border-radius: 10px;
+      background-color:#481edf;
+      font-size: 20px;
+      margin-top: 5px;
+      cursor: pointer;
+      color:beige;
+  }
+
+  .contactme:hover{
+    background-color: whitesmoke;
+    color:#481edf ;
+    transition:all 0.3s;
+  }
